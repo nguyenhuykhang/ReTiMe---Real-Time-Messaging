@@ -1,0 +1,32 @@
+.input-container{
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 35%;
+    margin: 0;
+    padding: 0 0 0 6px;
+    height: 40px;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: 0 !important;
+}
+
+
+#signUpBtn {
+    height: 50px;
+    width: 35%;
+    background-color: black;
+    color: #fffa69;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.ghost {
+    margin: 0px 0px;
+    color: red;
+    display: none;
+}
