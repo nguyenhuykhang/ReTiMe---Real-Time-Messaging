@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="header-area">
+        <h1> Real-time chat app </h1>
+    </div>
+    
+    <div class="message-area" id="message-area">
+        <!-- <div class="message-box others-message-box">
+            <div class="message others-message"> Hi, How are you? </div>
+            <div class="separator"></div>
+        </div>
+        
+        <div class="message-box my-message-box">
+            <div class="message my-message"> I am good, how are you doing? </div>
+            <div class="separator"></div>
+        </div> -->
+    </div>
+    
+    <div class="typing-area">
+        <textarea class="typing-box" id="typing-box"></textarea>
+        <button class="send-button" onclick="sendMessage()"> Send </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js" integrity="sha512-YeeA/Qxn5hYdkukScTCNNOhTrv1C2RubAGButJ1rmgQwZf/HdRaCGl+JAVkqsqaNRaYNHdheiuKKuPf9mDcqKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
