@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Trang Login</title>
+    <link rel="stylesheet" href="./css/style_login_signup.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+
+    <section>
+        <!--Bắt Đầu Phần Hình Ảnh-->
+        <div class="img-bg">
+            <img src="https://static.vecteezy.com/system/resources/previews/004/897/430/original/message-icon-you-can-use-for-commercial-free-vector.jpg"
+                alt="Hình Ảnh Minh Họa">
+        </div>
+        <!--Kết Thúc Phần Hình Ảnh-->
+        <!--Bắt Đầu Phần Nội Dung-->
+        <div class="noi-dung">
+            <div class="form">
+                <h2>ReTiMe</h2>
+                <div>
+                    <div class="input-form">
+                        <span>Email</span>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-form">
+                        <span>Phone Number</span>
+                        <input type="text" id="phoneNumber" required>
+                    </div>
+                    <div class="input-form">
+                        <span>Username</span>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="input-form">
+                        <span>Password</span>
+                        <input id="password" type="password" required>
+                    </div>
+                    <div class="input-form">
+                        <span>Confirm Password</span>
+                        <span id='message'></span>
+                        <input type="password" id="cfPassword" required>
+                    </div>
+                    <div class="input-form">
+                        <input id="signUpBtn" type="submit">
+                    </div>
+                    <div class="input-form">
+                        <p>Already have an account? <a href="login_page.html">Login</a></p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        <!--Kết Thúc Phần Nội Dung-->
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js" type="module"></script>
+    <script src="./js/logic_signup.js" type="module"></script>
+</body>
+
+</html>
