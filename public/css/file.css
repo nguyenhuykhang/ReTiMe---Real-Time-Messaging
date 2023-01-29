@@ -4,9 +4,6 @@
     overflow-x: hidden;
 }
 
-html {
-    scroll-behaviour: smooth;
-}
 
 :root {
     --navbar-height: 59px;
@@ -24,40 +21,6 @@ html {
     border-radius: 50px;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    cursor: pointer;
-}
-
-.nav-list {
-    width: 70%;
-    display: flex; 
-}
-
-.nav-list li {
-
-    list-style: none;
-    padding: 2px 6px;
-}
-
-.nav-list li a {
-
-    text-decoration: none;
-    color: white;
-}
-
-.nav-list li a:hover {
-    color: grey;
-}
-
-.rightNav {
-    width: 50;
-    text-align: right;
-}
 
 #search {
     padding: 5px;
@@ -67,14 +30,16 @@ html {
 }
 
 .background {
-    background: linear-gradient(110deg,#f70063 10%,#1e4fff 110%);
     background-blend-mode: darken;
     background-size: cover;
-    box-shadow: 0 0 20px;
+    background-image: url("https://paradelle.files.wordpress.com/2015/09/star-fall.gif");
+
+
 }
 
 .firstsection {
-    height: 50vh;
+    height: 60vh;
+    overflow: hidden;
 }
 
 .box-main {
@@ -82,9 +47,11 @@ html {
     justify-content: center;
     align-items: center;
     color: white;
-    max-width: 50%;
-    margin: auto;
-    height: 80%;
+    max-width: 100%;
+
+    height: auto;
+    padding: 5%;
+    flex-direction: column;
 }
 
 .firstHalf {
@@ -100,16 +67,20 @@ html {
 }
 
 .text-big {
+    overflow: hidden;
     font-family: 'Sofia', sans-serif;
     font-weight: bold;
-    font-size: 41px;
+    font-size: 61px;
     text-align: center;
+
+
 }
 
 .text-small {
     font-family: 'Arial', cursive;
     font-size: 18px;
     text-align: center;
+    overflow: hidden;
 }
 
 /* #service {
@@ -162,6 +133,13 @@ html {
     font-family: sans-serif;
     text-align: center;
 }
+#service {
+    box-shadow: 0 0 9px white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 
 .btn {
     padding: 8px 20px;
@@ -197,3 +175,38 @@ width: 100%;
 display: block;
 }
 }
+
+
+
+/* CSS */
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(122.3deg, rgb(111, 71, 133) 14.6%, rgb(232, 129, 166) 29.6%, rgb(237, 237, 183) 42.1%, rgb(244, 166, 215) 56.7%, rgb(154, 219, 232) 68.7%, rgb(238, 226, 159) 84.8%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+

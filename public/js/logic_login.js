@@ -24,7 +24,7 @@ signInBtn.addEventListener("click", async function () {
     var inputUserName = username.value
     var inputPassword = password.value
     var flag = false
-    console.log("HIBGIUGBEIWEUBIWE")
+    
 
     const users = query(collection(db, "users"), where("username", "==", inputUserName), where("password", "==", inputPassword))
     const querySnapshot = await getDocs(users)
@@ -32,7 +32,8 @@ signInBtn.addEventListener("click", async function () {
         console.log(doc.id, " => ", doc.data());
         console.log("success")
         flag = true
-        location.href = "index.html"
+        location.href = "ChatApp.html"
+        
     })
     if (flag == false) {
         alert("No user found")

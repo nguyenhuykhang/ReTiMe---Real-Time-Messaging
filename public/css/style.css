@@ -6,7 +6,9 @@
 /*Nav bar */
 .navigation {
     background: linear-gradient(rgb(21, 13, 107) 1.1%, rgb(188, 16, 80) 130.5%);
-    padding: 10px;
+
+    padding-left: 30px;
+    padding-right: 30px;
     border-bottom-left-radius:25px;
     border-bottom-right-radius: 25px;
     background-color: rgb(46, 46, 46);
@@ -21,7 +23,16 @@
     justify-content: space-between !important;
 }
 
+.navbar-brand{
+    font-family: "Sofia", sans-serif;
+    font-size: 2em !important;
+    color: aliceblue !important;
+    font-weight: 900 !important;
+
+}
+
 .nav-link {
+
     font-size: 25px !important;
     margin: 3px;
     color: #f9ecea !important;

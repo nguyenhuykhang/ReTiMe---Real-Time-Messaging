@@ -16,14 +16,18 @@ section .img-bg{
     height: 100%;
 }
 section .img-bg img{
-    position: absolute;
+    position:sticky;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    object-fit: scale-down;
 
+}
+#msu_planet{
+    color: rgb(194, 178, 200);
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
 section .noi-dung{
     display: flex;
     justify-content: center;
@@ -36,13 +40,12 @@ section .noi-dung .form{
     width: 50%;
 }
 section .noi-dung .form h2{
-    color: #607d8b;
-    font-weight: 500;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    border-bottom: 4px solid #ff4584;
-    display: inline-block;
-    letter-spacing: 1px;
+    font-family: "Sofia", sans-serif;
+    font-size: 2em !important;
+    color: aliceblue !important;
+    font-weight: 900 !important;
+    overflow: hidden;
+    text-align: center;
 }
 
 section .noi-dung .form .input-form{
