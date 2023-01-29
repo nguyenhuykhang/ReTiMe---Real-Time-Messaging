@@ -69,7 +69,7 @@ body {
     column-gap: 20px;
     padding: 5%;
 }
-.
+
 @media only screen and (max-width: 650px) {
     .box_layout {
         display: flex;
