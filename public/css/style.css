@@ -1,8 +1,79 @@
 * {
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
+/*Nav bar */
+.navigation {
+    background: linear-gradient(rgb(21, 13, 107) 1.1%, rgb(188, 16, 80) 130.5%);
+    padding: 10px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(46, 46, 46);
+    border-color: rgb(194, 192, 194);
+    border-bottom-style:groove;
+    box-shadow: 0 0 8px white;
+    
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+}
+
+.nav-link {
+    font-size: 25px !important;
+    margin: 3px;
+    color: #f9ecea !important;
+    font-weight: 300 !important;
+    font-family: "Sofia", sans-serif;
+}
+.nav-link:hover {
+    font-weight: 500;
+    border-radius: 15%;
+    background-color: rgba(221, 173, 173, 0.616);
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+@media only screen and (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-link {
+        flex-direction: column;
+        font-size: 20px !important;
+    }
+  }
+
+/*Nav bar */
+
+/*Box layout */
+body {
+    /*background-image: radial-gradient(circle at 1px 1px, rgba(179, 175, 175, 0.582) 1px, transparent 0);
+    background-size: 20px 20px; */
+    background-image: url("./star_black.jpg");
+}
+.box_layout {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    column-gap: 20px;
+    padding: 5%;
+}
+.
+@media only screen and (max-width: 650px) {
+    .box_layout {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+
+
+/*Box layout */
 
 .header-area {
     height: 6%;
@@ -18,32 +89,36 @@
     overflow: auto;
 }
 
-.typing-area {
+#typing-area {
     margin-top: 4px;
     padding: 4px;
-    height: 8%;
+    height: 15%;
 }
 
 .typing-box {
     width: 90%;
-    height: 100%;
+    height: 50px;
     resize: none;
     padding: 3px;
+    border-radius: 15px;
 }
 
 .send-button {
+    font-family: "Sofia", sans-serif;
     border: 0;
     width: 9%;
-    background: rgb(0 127 255);
+    background: linear-gradient(63deg, rgb(74, 51, 51) 2.9%, rgb(25, 12, 43) 102.1%);
     color: white;
     padding: 8px;
     font-size: 18px;
     position: absolute;
     margin: 8px;
+    border-radius: 15px;
 }
 
 .message-box {
     margin-top: 10px;
+    border-radius: 15px;
 }
 
 /* .others-message-box {
@@ -52,18 +127,21 @@
 .my-message-box {
     text-align: right;
     background: white;
+    border-radius: 25px;
 }
 
 .message {
     max-width: 70%;
-    border-radius: 5%;
+    border-radius: 15px;
     padding: 5px;
+    font-size: large;
+    font-family: sans-serif;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 .my-message {
     float: right;
-    background: rgb(0 127 255);
+    background: linear-gradient(rgb(21, 13, 107) 1.1%, rgb(188, 16, 80) 130.5%);
     color: white;
 }
 
