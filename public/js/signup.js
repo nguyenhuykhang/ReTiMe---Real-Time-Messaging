@@ -40,7 +40,7 @@ signUpBtn.addEventListener("click", async function () {
             email.value = ""
             password.value = ""
             cfPassword.value = ""
-            // console.log("Document written with ID: ", docRef.id);
+            console.log("Document written with ID: ", docRef.id);
           } catch (e) {
             console.error("Error adding document: ", e);
           }
