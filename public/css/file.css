@@ -119,9 +119,9 @@
 
 #services .box img {
     justify-content: center;
-    width: 80%;
+    width: 60%;
     margin-top: 10px;
-    height: 40%;
+    height: 60%;
     margin: auto;
     /* display: block; */
     border-radius: 50px;

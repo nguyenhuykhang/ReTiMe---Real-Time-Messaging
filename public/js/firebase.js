@@ -14,5 +14,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
+const q = query(collection(db, "users"), where("", "==", true));
+
+const querySnapshot = await getDocs(q);
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  console.log(doc.id, " => ", doc.data());
+});
+
+
 {/* <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js" type="module"></script>
 <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js" type="module"></script> */}

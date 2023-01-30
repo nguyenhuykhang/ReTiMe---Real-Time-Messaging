@@ -1,111 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/newplane.png" />
     <title>Real Chat Application</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-</head>
-<header>
-    <div> 
-        <div class = "navigation"> 
-            <nav class="navbar navbar-expand py-3">
+  </head>
+  <header>
+    <div>
+      <div class="navigation">
+        <nav class="navbar navbar-expand py-3">
 
-                <a class="navbar-brand" href="./index.html"><img width="80px" height="auto" src = "./img/newplane.png"> ReTiMe</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <!--span class="navbar-toggler-icon"></span-->
-                </button>
-            
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./ChatApp.html">Chat Box</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./login_page.html">Sign Up/log In</a>
-                    </li>
-                </ul>
+          <a class="navbar-brand" href="./index.html"><img width="80px" height="auto" src="./img/newplane.png"> ReTiMe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!--span class="navbar-toggler-icon"></span-->
+          </button>
 
-            
-            </nav>
-        </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ChatApp.html">Chat Box</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login_page.html">Sign Up/log In</a>
+            </li>
+          </ul>
+
+
+        </nav>
+      </div>
     </div>
     <!--End Nav bar-->
-</header>
-<body style="background-color:  black"> 
-    <div class ="dot">
-        <div class ="box_layout">
-            <div class="card" style="background:linear-gradient(63deg, rgb(74, 51, 51) 2.9%, rgb(25, 12, 43) 102.1%); border-radius: 5%; box-shadow: 0 0 8px white;">
-                <div class="card-body" style="height: 700px;">
-      
-                  <ul class="list-unstyled mb-0">
-                    <li class="p-2 border" style="background-color: rgba(58, 57, 57, 0.521); border-radius: 15px; margin-top: 20px; margin-bottom: 20px;">
-                      <a href="#!" class="d-flex justify-content-between">
-                        <div class="d-flex flex-row">
-                          <img src="./img/default ava.jpg" alt="avatar"
-                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                          <div class="pt-1">
-                            <p style ="font-weight: bold; color:rgb(22, 81, 218);" id="chat_name"></p>
-                          </div>
-                        </div>
+  </header>
 
-                      </a>
-                    </li>
-                    <li class="p-2 border" style="background-color: rgba(58, 57, 57, 0.521); border-radius: 15px;margin-top: 20px; margin-bottom: 20px;">
-                      <a href="#!" class="d-flex justify-content-between">
-                        <div class="d-flex flex-row">
-                          <img src="./img/default ava.jpg" alt="avatar"
-                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                          <div class="pt-1">
-                            <p class="fw-bold mb-0">Khang</p>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="p-2 border" style="background-color: rgba(58, 57, 57, 0.521); border-radius: 15px;margin-top: 20px; margin-bottom: 20px;">
-                      <a href="#!" class="d-flex justify-content-between">
-                        <div class="d-flex flex-row">
-                          <img src="./img/default ava.jpg" alt="avatar"
-                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
-                          <div class="pt-1">
-                            <p class="fw-bold mb-0">Waiting for other people...</p>
-                          </div>
-                        </div>
-                      </a>
-                    </li>                    
-                  </ul>
-      
-                </div>
-            </div>
-            <div class ="chat_layout">
-                <div class ="chat_box">
-                    <div class="message-area" id="message-area"> 
-                        <div class="message-box my-message-box">
-                            <div class="message my-message"> Let's start </div>
-                            
-                            <div class="separator"></div>
-                        </div> 
+  <body style="background-color:  black">
+    <div class="dot">
+      <div class="box_layout">
+        <div class="card"
+          style="background:linear-gradient(63deg, rgb(74, 51, 51) 2.9%, rgb(25, 12, 43) 102.1%); border-radius: 5%; box-shadow: 0 0 8px white;">
+          <div class="card-body" style="height: 700px;">
+
+            <ul class="list-unstyled mb-0">
+              <li class="p-2 border"
+                style="background-color: rgba(58, 57, 57, 0.521); border-radius: 15px; margin-top: 20px; margin-bottom: 20px;">
+                <a href="#!" class="d-flex justify-content-between">
+                  <div class="d-flex flex-row">
+                    <img src="./img/default ava.jpg" alt="avatar"
+                      class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                    <div class="pt-1">
+                      <p style="font-weight: bold; color:rgb(22, 81, 218);" id="chat_name"></p>
                     </div>
-                    
-                    <div id="typing-area">
-                        <input class="typing-box" autocomplete="off" id="typing-box">
-                        <button id ="send-button" class="send-button" onclick="sendMessage()"> Send </button>
+                  </div>
+
+                </a>
+              </li>
+              <li class="p-2 border"
+                style="background-color: rgba(58, 57, 57, 0.521); border-radius: 15px;margin-top: 20px; margin-bottom: 20px;">
+                <a href="#!" class="d-flex justify-content-between">
+                  <div class="d-flex flex-row">
+                    <img src="./img/default ava.jpg" alt="avatar"
+                      class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                    <div class="pt-1">
+                      <p class="fw-bold mb-0">Khang</p>
                     </div>
-                </div> 
-            </div>
+                  </div>
+                </a>
+              </li>
+              <li class="p-2 border"
+                style="background-color: rgba(58, 57, 57, 0.521); border-radius: 15px;margin-top: 20px; margin-bottom: 20px;">
+                <a href="#!" class="d-flex justify-content-between">
+                  <div class="d-flex flex-row">
+                    <img src="./img/default ava.jpg" alt="avatar"
+                      class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                    <div class="pt-1">
+                      <p class="fw-bold mb-0">Waiting for other people...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+          </div>
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js" integrity="sha512-YeeA/Qxn5hYdkukScTCNNOhTrv1C2RubAGButJ1rmgQwZf/HdRaCGl+JAVkqsqaNRaYNHdheiuKKuPf9mDcqKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <div class="chat_layout">
+          <div class="chat_box">
+            <div class="message-area" id="message-area">
+              <div class="message-box my-message-box">
+                <div class="message my-message"> Let's start </div>
 
-</body>
+                <div class="separator"></div>
+              </div>
+            </div>
+
+            <div id="typing-area">
+              <input class="typing-box" autocomplete="off" id="typing-box">
+              <button id="send-button" class="send-button" onclick="sendMessage()"> Send </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"
+      integrity="sha512-YeeA/Qxn5hYdkukScTCNNOhTrv1C2RubAGButJ1rmgQwZf/HdRaCGl+JAVkqsqaNRaYNHdheiuKKuPf9mDcqKg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script>
+      var username = localStorage.getItem('username')
+      console.log(username)
+      var chatName = document.getElementById("chat_name")
+      chatName.innerHTML += username
+    </script>
+
+  </body>
+
 </html>
