@@ -19,7 +19,7 @@ ReTiMe is a real-time chat application that allows multiple users to easily send
 To run the project locally, please follow the below steps:
 1. Clone the project and install dependencies  
 Download Node.js from https://nodejs.org/en/download/ then open the terminal  
-`git clone https://github.com/NhatMinh12/ReTiMe.git`  
+`git clone https://github.com/nguyenhuykhang/ReTiMe---Real-Time-Messaging.git`  
 `cd ReTiMe`  
 `npm install express`  
 `npm install socket.io`  
